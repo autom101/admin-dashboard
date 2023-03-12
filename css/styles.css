@@ -7,7 +7,7 @@ body {
   height: 100vh;
 
   display: grid;
-  grid-template: 1fr 8fr / 1fr 4fr;
+  grid-template: 1fr 8fr / 2fr 7fr;
   grid-template-areas:
     "dash-left dash-top"
     "dash-left dash-center";
