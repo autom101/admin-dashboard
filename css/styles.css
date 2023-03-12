@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -10,6 +11,8 @@ body {
   grid-template-areas:
     "dash-left dash-top"
     "dash-left dash-center";
+  font-family: "Questrial", sans-serif;
+  font-size: 16px;
 }
 
 .dashboard-left {
@@ -19,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar-top,
@@ -79,7 +83,7 @@ header,
     "search search"
     "welcome nav";
 
-  box-shadow: inset 0px -3px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
   border-style: i;
 }
 
@@ -132,6 +136,7 @@ header,
 
   justify-items: start;
   align-items: start;
+  margin-bottom: 1rem;
 }
 
 .user-image-big {
@@ -156,7 +161,8 @@ header,
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
+  justify-content: center;
 }
 
 span {
@@ -174,7 +180,7 @@ span {
 nav ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
+  gap: 3rem;
   margin-right: 4rem;
 }
 
@@ -207,9 +213,10 @@ a:hover {
 .dashboard-center {
   grid-area: dash-center;
   background-color: #d6d3d1;
+  box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 
   min-width: none;
-  padding: 2rem;
+  padding: 1rem;
   gap: 1rem;
 
   display: grid;
@@ -223,12 +230,15 @@ a:hover {
 .articles-heading {
   grid-area: articles-heading;
 
+  margin-top: 1rem;
   font-size: 28px;
   font-weight: bold;
 }
 
 .announcements-heading {
   grid-area: announcements-heading;
+
+  margin-top: 1rem;
 
   font-size: 28px;
   font-weight: bold;
@@ -323,6 +333,12 @@ article .icons {
 
   display: grid;
   grid-template: 1fr 9fr / 1fr;
+}
+
+.trending-container h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 8px 0;
 }
 
 .trending-people-container {
