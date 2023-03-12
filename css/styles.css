@@ -1,3 +1,23 @@
 body {
+  height: 100vh;
   display: grid;
+  grid-template: 1fr 6fr / 1fr 5fr;
+  grid-template-areas:
+    "dash-left dash-top"
+    "dash-left dash-center";
+}
+
+.dashboard-left {
+  grid-area: dash-left;
+  background-color: aquamarine;
+}
+
+.dashboard-top {
+  grid-area: dash-top;
+  background-color: #f8fafc;
+}
+
+.dashboard-center {
+  grid-area: dash-center;
+  background-color: #94a3b8;
 }
