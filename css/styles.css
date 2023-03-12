@@ -123,11 +123,11 @@ header,
     "image greeting .";
 
   justify-items: start;
-  align-items: start;
 }
 
 .user-image-big {
   grid-area: image;
+  align-self: center;
 
   box-sizing: border-box;
   padding-bottom: 1rem;
@@ -192,4 +192,31 @@ nav ul {
 
   box-sizing: border-box;
   min-width: none;
+
+  display: grid;
+  grid-template: 1fr 9fr 9fr / 4fr 4fr 3fr;
+  grid-template-areas:
+    "articles-heading . announcements-heading"
+    "articles-container articles-container announcements-container"
+    "articles-container articles-container trending-container";
+}
+
+.articles-heading {
+  grid-area: articles-heading;
+}
+
+.announcements-heading {
+  grid-area: announcements-heading;
+}
+
+.articles-container {
+  grid-area: articles-container;
+}
+
+.announcements-container {
+  grid-area: announcements-container;
+}
+
+.trending-container {
+  grid-area: trending-container;
 }
